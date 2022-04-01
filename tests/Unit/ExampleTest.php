@@ -16,6 +16,12 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
         //$this->assertTrue(false);
         $this->assertEquals("igual", "igual");
-        $this->asser
+
     }
+
+    public function test_check(){
+        $var = true;
+        $this->assertTrue($var);
+    }
+
 }
