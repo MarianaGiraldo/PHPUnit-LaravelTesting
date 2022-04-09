@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PhotoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,9 @@ Route::get('/', function () {
 Route::get('/aboutus', function () {
     return 'What about us? what about all the time we thought we had the answer';
 });
+
+Route::view('/photo', 'photo');
+
+Route::post('/photo', [PhotoController::class, 'uploadPhoto']);
+
 

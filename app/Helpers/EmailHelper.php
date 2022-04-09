@@ -7,6 +7,3 @@ if (! function_exists('validate_email')) {
         }
     }
 
-
-
-?>
